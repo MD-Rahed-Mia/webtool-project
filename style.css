@@ -267,23 +267,20 @@ body {
   gap: 2rem;
 }
 
-/* responsive on less than 768px devices  */
+/* 
+responsive on less than 768px devices  */
 @media screen and (max-width: 768px) {
   .tool-cards {
-    align-items: center;
-    justify-content: center;
-  }
-
-  .tool-cards::after {
-    content: "";
-    flex: auto;
+    display: flex;
   }
 }
+
 
 /* responsive on less than 600px devices  */
 @media screen and (max-width: 600px) {
   .tool-cards {
     display: grid;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -297,18 +294,18 @@ body {
   cursor: pointer;
 }
 
-/* responsive on less than 768px devices  */
+/* responsive on less than 600px devices  */
 @media screen and (max-width: 768px) {
   .tool-card {
-    width: 250px;
+    width: 80%;
+    margin: 0 auto;
   }
 }
-
 
 /* responsive on less than 600px devices  */
 @media screen and (max-width: 600px) {
   .tool-card {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
   }
 }
