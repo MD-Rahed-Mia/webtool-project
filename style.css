@@ -115,8 +115,7 @@ body {
   .nav-bar ul {
     display: none;
   }
-
-  .nav-bar ul.active {
+  .nav-bar ul .active {
     display: flex;
   }
 
