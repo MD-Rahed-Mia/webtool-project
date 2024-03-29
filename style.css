@@ -52,7 +52,7 @@ body {
 }
 
 .main {
-  width: 95%;
+  width: 85%;
   margin: 0 auto;
   padding: 1% 6%;
   background: var(--bg);
@@ -67,8 +67,14 @@ body {
 /* responsive for small less than 1200px  */
 @media screen and (max-width: 1200px) {
   .main {
-    width: 95%;
+    width: 85%;
     border-radius: 15px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .main {
+    width: 90%;
   }
 }
 
@@ -282,21 +288,30 @@ body {
   }
 }
 
-
 /* tool-container ends here  */
 
 
 
 /* tools-cards start here  */
 
-
 .tool-cards {
   margin-top: 2rem;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
 }
+
+/* 
+responsive on less than 768px devices  */
+@media screen and (max-width: 1200px) {
+  .tool-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 
 /* 
 responsive on less than 768px devices  */

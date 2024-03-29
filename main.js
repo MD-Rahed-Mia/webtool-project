@@ -5,8 +5,6 @@ menuBtn.addEventListener("click", () => {
   menuContainer.classList.toggle("active");
 });
 
-
-
 const themeBtn = document.querySelector(".theme-icon");
 themeBtn.addEventListener("click", () => {
   let themeAttr = document.body.getAttribute("data-theme");
