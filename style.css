@@ -30,6 +30,12 @@ body {
   background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 450px) {
+  .main-wrapper {
+    padding: 0.5rem;
+  }
+}
+
 .main {
   width: 95%;
   margin: 0 auto;
@@ -39,6 +45,7 @@ body {
   border-radius: 50px;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1), -1px -1px 10px rgba(0, 0, 0, 0.1);
   position: relative;
+  overflow-x: hidden;
 }
 
 /* responsive for small less than 1200px  */
@@ -46,6 +53,13 @@ body {
   .main {
     width: 95%;
     border-radius: 15px;
+  }
+}
+
+
+@media screen and (max-width: 450px) {
+  .main {
+    width: 95%;
   }
 }
 
@@ -115,6 +129,7 @@ body {
   .nav-bar ul {
     display: none;
   }
+
   .nav-bar ul .active {
     display: flex;
   }
