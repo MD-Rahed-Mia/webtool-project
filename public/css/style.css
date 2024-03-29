@@ -35,6 +35,10 @@ body {
 }
 
 
+a {
+  color: var(--color);
+}
+
 .main-wrapper {
   width: 100%;
   min-height: 100vh;
@@ -349,6 +353,19 @@ responsive on less than 768px devices  */
   box-shadow: var(--box-shadow);
 }
 
+/* .tool-using-btn {
+  background: var(--primary-color);
+  display: block;
+  width: 150px;
+  margin: 0 auto;
+  border-radius: 50px;
+}
+
+.tool-using-btn a {
+  text-align: center;
+  padding: 5px 1.5rem;
+} */
+
 /* responsive on less than 600px devices  */
 @media screen and (max-width: 600px) {
   .tool-card {
@@ -387,6 +404,7 @@ responsive on less than 768px devices  */
 
 .tool-card-desc {
   padding: 1rem;
+  color: var(--color);
 }
 
 .tool-card-desc h1 {
