@@ -13,15 +13,21 @@ router.get("/websiteResponseCheck", (req, res) => {});
 
 router.get("/getip", (req, res) => {
   const ipAddress = IP.address();
-
   res.send(ipAddress);
-
-  console.log(ipAddress);
 });
 
-
 router.get("/userip", (req, res) => {
-  res.sendFile("userIp.html", {root: "./public/Tools/"});
-})
+  res.sendFile("userIp.html", { root: "./public/Tools/" });
+});
+
+router.get("/user-agent", (req, res) => {
+  res.sendFile("user_agent.html", { root: "./public/Tools/" });
+});
+
+// router.get("/api/user-agent", (req, res) => {
+//   res.send(navigator.userAgent);
+
+//   console.log(navigator.userAgent);
+// });
 
 module.exports = router;

@@ -1,7 +1,5 @@
 const IpText = document.querySelector("#ip-text");
 
-console.log(window.location);
-
 async function checkWebsiteStatus() {
   try {
     const apiData = await fetch(

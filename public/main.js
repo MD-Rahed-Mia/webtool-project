@@ -5,10 +5,21 @@ menuBtn.addEventListener("click", () => {
   menuContainer.classList.toggle("active");
 });
 
+function setTheme() {
+  const theme = localStorage.getItem("theme");
+  document.body.setAttribute("data-theme", theme);
+}
+setTheme();
+
 const themeBtn = document.querySelector(".theme-icon");
+
 themeBtn.addEventListener("click", () => {
-  let themeAttr = document.body.getAttribute("data-theme");
-  themeAttr == "light"
-    ? document.body.setAttribute("data-theme", "dark")
-    : document.body.setAttribute("data-theme", "light");
+  const theme = localStorage.getItem("theme");
+  if (theme == "light") {
+    localStorage.setItem("theme", "dark");
+  } else {
+    localStorage.setItem("theme", "light");
+  }
+
+  location.reload(true);
 });
