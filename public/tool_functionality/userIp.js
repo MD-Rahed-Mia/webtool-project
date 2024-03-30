@@ -4,9 +4,12 @@ console.log(window.location);
 
 async function checkWebsiteStatus() {
   try {
-    const apiData = await fetch(`${window.location.host}/getip`, {
-      mode: "no-cors",
-    });
+    const apiData = await fetch(
+      `${window.location.protocol}//${window.location.host}/getip`,
+      {
+        mode: "no-cors",
+      }
+    );
     const data = await apiData.text();
     IpText.innerHTML = data;
   } catch (error) {
