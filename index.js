@@ -4,7 +4,7 @@ const router = require("./route/tool.route");
 const app = express();
 
 app.get("/", (req, res) => {
-  res.sendfile(__dirname + "/index.html");
+  res.sendFile(__dirname + "/index.html");
 });
 
 app.use("/tool", router);

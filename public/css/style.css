@@ -126,6 +126,10 @@ a {
   justify-content: center;
 }
 
+.navbar-right ul li a {
+  color: var(--color);
+}
+
 .navbar-right {
   display: flex;
   align-items: center;
