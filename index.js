@@ -11,6 +11,6 @@ app.use("/tool", router);
 
 app.use(express.static(__dirname + "/public"));
 
-app.listen(8080, () => {
-  console.log("server is running in : " + `localhost:8080`);
+app.listen(3000, () => {
+  console.log("server is running in : " + `localhost:3000`);
 });
