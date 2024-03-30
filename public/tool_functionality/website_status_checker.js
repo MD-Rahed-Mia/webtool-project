@@ -3,6 +3,4 @@ const goBtn = document.querySelector(".go-btn");
 
 console.log(urlInput);
 
-
-
 // goBtn.addEventListener("click", checkWebsiteStatus);

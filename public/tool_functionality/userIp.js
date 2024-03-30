@@ -1,10 +1,8 @@
 const IpText = document.querySelector("#ip-text");
 
-console.log(IpText);
-
 async function checkWebsiteStatus() {
   try {
-    const apiData = await fetch("http://localhost:8080/tool/getip", {
+    const apiData = await fetch("http://localhost:3000/getip", {
       mode: "no-cors",
     });
     const data = await apiData.text();
@@ -14,4 +12,4 @@ async function checkWebsiteStatus() {
   }
 }
 
-window.onload = checkWebsiteStatus();
+checkWebsiteStatus();

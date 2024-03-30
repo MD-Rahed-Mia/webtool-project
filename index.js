@@ -7,7 +7,7 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/index.html");
 });
 
-app.use("/tool", router);
+app.use(router);
 
 app.use(express.static(__dirname + "/public"));
 
