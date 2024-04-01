@@ -39,5 +39,7 @@ router.get("/text-to-binary", (req, res) => {
 router.get("/rgb-to-hex", (req, res) => {
   res.sendFile("rgb_to_hex.html", { root: "./public/Tools/" });
 });
-
+router.get("/base64", function (req, res) {
+  res.sendFile("text_to_base64.html", { root: "./public/Tools/" });
+});
 module.exports = router;
