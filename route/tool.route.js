@@ -42,4 +42,10 @@ router.get("/rgb-to-hex", (req, res) => {
 router.get("/base64", function (req, res) {
   res.sendFile("text_to_base64.html", { root: "./public/Tools/" });
 });
+
+// //404 error handling
+// router.use("*", function (req, res) {
+//   res.status(404).sendFile("Error.html", { root: "./public/Tools/" });
+// });
+
 module.exports = router;
