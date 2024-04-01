@@ -64,7 +64,7 @@
 button {
   padding: 10px 1rem;
   background: var(--primary-color);
-  color: var(--color);
+  color: white;
   border: none;
   outline: none;
   cursor: pointer;
@@ -72,6 +72,7 @@ button {
   min-width: 120px;
 }
 
+/* error page handling here  */
 .error-not-found h1 {
   font-size: 8rem;
   text-align: center;
