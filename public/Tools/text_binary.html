@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Webtool website</title>
+    <title>Webtool website Text to binary</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/SelectedTools.css" />
     <link
@@ -56,12 +56,23 @@
         <div class="selected-tool">
           <div class="selected-tool-card-heading">
             <i class="fa-solid fa-user"></i>
-            <h1>User Agent</h1>
-            <p>Find your user agent</p>
+            <h1>Text to Binary</h1>
+            <p>convert Text into binary code.</p>
           </div>
           <div class="selected-tool-card">
-            Your Agent is :
-            <p id="user-agent-text"></p>
+            <p>Enter your string</p>
+            <div>
+              <input
+                type="text"
+                name="text"
+                id="input"
+                placeholder="enter your text here ...."
+              />
+              <div>
+                <button class="converter">Convert to Binary</button>
+              </div>
+            </div>
+            <h1 class="result"></h1>
           </div>
         </div>
         <!-- selected-tools-ends-here  -->
@@ -91,6 +102,6 @@
     </div>
 
     <script src="../main.js"></script>
-    <script src="/tool_functionality/user_agent.js"></script>
+    <script src="/tool_functionality/text_to_binary.js"></script>
   </body>
 </html>

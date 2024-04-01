@@ -30,4 +30,14 @@ router.get("/user-agent", (req, res) => {
 //   console.log(navigator.userAgent);
 // });
 
+router.get("/hex-to-rgb", (req, res) => {
+  res.sendFile("hex_to_rgb.html", { root: "./public/Tools/" });
+});
+router.get("/text-to-binary", (req, res) => {
+  res.sendFile("text_binary.html", { root: "./public/Tools/" });
+});
+router.get("/rgb-to-hex", (req, res) => {
+  res.sendFile("rgb_to_hex.html", { root: "./public/Tools/" });
+});
+
 module.exports = router;

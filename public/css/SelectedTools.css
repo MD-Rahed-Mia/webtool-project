@@ -30,6 +30,10 @@
   margin-top: 2rem;
 }
 
+.selected-tool-card h1 {
+  word-wrap: break-word;
+}
+
 .selected-tool-card input {
   width: 100%;
   padding: 10px 1.5rem;
@@ -41,6 +45,7 @@
   font-size: 1.2rem;
   background: var(--bg);
 }
+
 .go-btn button {
   padding: 10px 1.4rem;
   cursor: pointer;
@@ -54,4 +59,15 @@
 
 .tool-detail-desc {
   margin-top: 1.4rem;
+}
+
+button {
+  padding: 10px 1rem;
+  background: var(--primary-color);
+  color: var(--bg);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50px;
+  min-width: 120px;
 }

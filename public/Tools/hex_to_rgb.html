@@ -56,12 +56,25 @@
         <div class="selected-tool">
           <div class="selected-tool-card-heading">
             <i class="fa-solid fa-user"></i>
-            <h1>User Agent</h1>
-            <p>Find your user agent</p>
+            <h1>Hex to RGB</h1>
+            <p>Convert Hex to RGB</p>
           </div>
           <div class="selected-tool-card">
-            Your Agent is :
-            <p id="user-agent-text"></p>
+            <p>convert your hex code to rgb</p>
+            <div>
+              <input
+                type="text"
+                name="hex"
+                id="hex"
+                placeholder="enter HEX code"
+              />
+              <div>
+                <button class="rgb-converter">Convert RGB</button>
+              </div>
+            </div>
+            <h1 class="rgb-result">
+              
+            </h1>
           </div>
         </div>
         <!-- selected-tools-ends-here  -->
@@ -91,6 +104,6 @@
     </div>
 
     <script src="../main.js"></script>
-    <script src="/tool_functionality/user_agent.js"></script>
+    <script src="/tool_functionality/hex_to_rgb.js"></script>
   </body>
 </html>

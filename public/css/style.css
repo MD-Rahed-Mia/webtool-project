@@ -160,7 +160,7 @@ a {
     display: none;
   }
 
-  .nav-bar ul .active {
+  .nav-bar ul.active {
     display: flex;
   }
 
@@ -171,6 +171,7 @@ a {
     color: var(--color);
   }
 }
+
 
 /* responsive on less than 768px devices  */
 @media screen and (max-width: 768px) {
